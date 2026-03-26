@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Motivação — Impostômetro PT</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --off-white: #F7F5F2;
+    --bege: #EFEAE4;
+    --preto: #1C1C1C;
+    --cinza: #6B6B6B;
+    --cinza-claro: #A3A3A3;
+    --terracota: #C47A5A;
+    --dourado: #C2A46D;
+    --borda: #DDD8D0;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--off-white);
+    color: var(--preto);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── HEADER ── */
+  header {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(247,245,242,.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--borda);
+  }
+  .header-inner {
+    max-width: 960px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 16px 24px;
+  }
+  .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem; font-weight: 600; color: var(--preto);
+    letter-spacing: -0.02em;
+    text-decoration: none;
+  }
+  nav a {
+    font-size: .82rem; color: var(--cinza); text-decoration: none;
+    margin-left: 28px; transition: color .2s;
+  }
+  nav a:hover { color: var(--terracota); }
+  nav a.active { color: var(--preto); font-weight: 500; }
+
+  /* ── LAYOUT ── */
+  .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+  /* ── ARTIGO ── */
+  .artigo {
+    padding: 80px 0 100px;
+  }
+
+  .artigo-header {
+    margin-bottom: 56px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--borda);
+  }
+
+  .artigo-label {
+    font-size: .75rem; font-weight: 600; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--terracota);
+    margin-bottom: 16px;
+  }
+
+  .artigo-titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    font-weight: 700; line-height: 1.15;
+    letter-spacing: -0.03em;
+    margin-bottom: 16px;
+  }
+
+  .artigo-subtitulo {
+    font-size: 1.1rem; color: var(--cinza);
+    font-style: italic; line-height: 1.5;
+  }
+
+  /* ── CORPO DO TEXTO ── */
+  .artigo-body h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem; font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-top: 48px; margin-bottom: 16px;
+    color: var(--preto);
+  }
+
+  .artigo-body p {
+    font-size: 1rem; color: var(--cinza);
+    line-height: 1.8; margin-bottom: 20px;
+  }
+
+  .artigo-body ul {
+    margin: 0 0 20px 0;
+    padding-left: 20px;
+  }
+
+  .artigo-body ul li {
+    font-size: 1rem; color: var(--cinza);
+    line-height: 1.8; margin-bottom: 8px;
+  }
+
+  .artigo-body .destaque {
+    background: #fff;
+    border-left: 3px solid var(--terracota);
+    border-radius: 0 8px 8px 0;
+    padding: 20px 24px;
+    margin: 32px 0;
+    font-size: 1.05rem;
+    color: var(--preto);
+    line-height: 1.7;
+    font-style: italic;
+  }
+
+  .artigo-cta {
+    margin-top: 56px;
+    padding-top: 40px;
+    border-top: 1px solid var(--borda);
+    text-align: center;
+  }
+
+  .artigo-cta p {
+    font-size: .95rem; color: var(--cinza); margin-bottom: 20px;
+  }
+
+  .btn-cta {
+    display: inline-block;
+    padding: 14px 32px;
+    background: var(--preto); color: #fff;
+    border-radius: 8px;
+    font-size: .95rem; font-weight: 500;
+    text-decoration: none;
+    transition: background .2s;
+  }
+  .btn-cta:hover { background: #333; }
+
+  /* ── FOOTER ── */
+  footer {
+    border-top: 1px solid var(--borda);
+    padding: 32px 0; text-align: center;
+    font-size: .8rem; color: var(--cinza-claro);
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">Calculadora de Impostos</a>
+    <nav>
+      <a href="index.html#calculadora">Calcular</a>
+      <a href="index.html#casosPublicos">Corrupção</a>
+      <a href="index.html#contexto">Contexto</a>
+      <a href="motivacao.html" class="active">Motivação</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ARTIGO -->
+<section class="artigo">
+  <div class="container">
+
+    <div class="artigo-header">
+      <div class="artigo-label">Motivação</div>
+      <h1 class="artigo-titulo">O roubo do nosso trabalho</h1>
+      <p class="artigo-subtitulo">Como não nos revoltamos com o imposto no Brasil?</p>
+    </div>
+
+    <div class="artigo-body">
+
+      <p>Em 1773, colonos americanos jogaram caixas de chá no porto de Boston. O motivo era a tributação sem representação. Ninguém precisava de contador para entender o problema. O imposto estava ali, visível, com nome e valor, cobrado por uma coroa distante que não prestava contas a ninguém.</p>
+
+      <p>Em 1789, a Inconfidência Mineira explodiu em torno da derrama, a cobrança forçada do ouro que Minas Gerais devia à Coroa Portuguesa. Em 1835, a Guerra dos Farrapos começou em boa parte porque o Rio Grande do Sul produzia charque e couro, e a tributação imperial tornava os produtos gaúchos mais caros que os estrangeiros no próprio mercado interno.</p>
+
+      <p>Esses movimentos tinham algo em comum: os envolvidos sabiam exatamente quanto pagavam, para quem pagavam e o que recebiam em troca. Ou melhor, sabiam o quanto não recebiam. A indignação era proporcional à clareza.</p>
+
+      <h2>Impostos no Brasil</h2>
+
+      <p>Hoje o Brasil arrecada mais de 30% do PIB em impostos. O Estado pega acima de 40% do que o trabalhador produz quando se somam todos os tributos diretos e indiretos ao longo de um ano. Isso coloca o país em patamar comparável e até maior ao de economias ricas da Europa, com serviços públicos em patamar incomparavelmente inferior. As escolas públicas não funcionam como as finlandesas. O sistema de saúde não funciona como o alemão. As estradas não funcionam como as francesas.</p>
+
+      <p>O Brasil lidera o ranking de pior retorno de imposto no mundo. Com a reforma tributária, teremos o maior IVA (Imposto sobre Valor Agregado) do mundo, previsto em torno de 28%.</p>
+
+      <div class="destaque">Ainda assim não há derrama, não há chá na água do porto de Boston, não há rebelião farroupilha. O que aconteceu?</div>
+
+      <h2>É complexo de ver o imposto</h2>
+
+      <p>O imposto colonial era direto. Você o via chegar, com nome, com data, com cobrador. O imposto moderno é, em sua maior parte, indireto. Está embutido no preço do feijão, do combustível, do remédio, do aluguel. Quando você paga R$ 100 numa conta de luz, uma fatia significativa vai para tributos, mas o valor não aparece discriminado. Vai junto com a tarifa, com os encargos setoriais, com os subsídios cruzados que financiam o que o governo decidiu que deve ser financiado.</p>
+
+      <p>O resultado é que o imposto se camufla no preço. Isso deixou de acionar o mecanismo político que os impostos históricos acionavam: a percepção clara de extração.</p>
+
+      <p>Sistemas tributários são complexos para causar amortecimento político. Quando o custo é fragmentado em milhares de transações invisíveis ao longo do ano, não há momento de dor concentrada. Sem dor concentrada, não há reação organizada.</p>
+
+      <p>Acrescente a isso a complexidade técnica. O Brasil tem um dos sistemas tributários mais labirínticos do mundo. O IBPT estima que o país edita mais de 30 normas tributárias por dia. Nenhum cidadão comum consegue rastrear o que paga, muito menos contestar. A opacidade não é subproduto da burocracia: é parte do funcionamento do sistema.</p>
+
+      <h2>Os 22 anos do PT no poder pioraram ainda mais a situação</h2>
+
+      <p>O modelo petista de política econômica tem uma lógica interna: o Estado é o agente central do desenvolvimento, e o financiamento desse Estado se faz pela expansão da arrecadação.</p>
+
+      <p>Diversas iniciativas do PT aumentaram os impostos desde o primeiro mandato. Nos últimos 3 anos, foram 27 aumentos de impostos. Alguns exemplos:</p>
+
+      <ul>
+        <li>Aumento do IOF no cartão de crédito/débito</li>
+        <li>Aumento do imposto para empréstimo de empresas</li>
+        <li>Aumento do imposto nos planos de seguro de vida</li>
+        <li>Aumento do imposto sobre o Lucro de instituições financeiras</li>
+        <li>Novos impostos sobre gasolina e diesel</li>
+        <li>Aumento de imposto para importar veículo elétrico</li>
+      </ul>
+
+      <p>As contribuições sociais se multiplicaram, e o peso do Estado ficou cada vez maior.</p>
+
+      <p>A lógica é de que o problema público é sempre um problema de insuficiência de arrecadação, nunca de ineficiência de gasto. Com essa premissa instalada, o movimento natural é sempre mais arrecadação. O tamanho do Estado, a estrutura do gasto, os incentivos que o setor público cria ou destrói ficam fora da equação.</p>
+
+      <div class="destaque">O paradoxo é este: pagamos mais do que em qualquer período anterior da república, e reagimos menos do que nossos antepassados reagiram a cargas que eram fração desta.</div>
+
+      <p>A explicação não é que as pessoas se tornaram mais submissas ou menos conscientes. É que perderam os instrumentos de medição. Sem número concreto, não há indignação concreta. Sem indignação concreta, não há pressão política sustentada. Esse é o desenho do sistema.</p>
+
+      <h2>O Impostômetro do PT</h2>
+
+      <p>Antes de discutir alíquotas, bases de cálculo e progressividade, é preciso que as pessoas saibam quanto pagam. O número individual: o que foi tirado de você pelo Estado neste ano e nos últimos anos, e o que isso representa em horas trabalhadas, em bens que poderiam ter sido adquiridos, em escolhas que não foram feitas.</p>
+
+      <p>É por isso que construímos o Impostômetro do PT.</p>
+
+      <p>A ferramenta é simples: você insere sua renda, e ela calcula quanto você pagou de imposto ao longo dos governos petistas. O resultado vem em reais e em anos de trabalho. A ferramenta já compara com os valores envolvidos nos principais escândalos de corrupção desses mesmos governos: o Mensalão, o Lava Jato, o desvio do INSS.</p>
+
+      <p>O objetivo é tornar o número real, pessoal e comparável.</p>
+
+      <p>Porque a revolta não desapareceu. Ela está represada num sistema desenhado para impedir que se forme. O primeiro passo para mudar é ver o que está sendo cobrado.</p>
+
+    </div>
+
+    <div class="artigo-cta">
+      <p>Descubra quanto você pagou de impostos durante os governos do PT.</p>
+      <a href="index.html" class="btn-cta">Calcular meus impostos</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    Ferramenta de conscientização — valores estimados com base em médias. Não é assessoria contábil ou fiscal.
+  </div>
+</footer>
+
+</body>
+</html>
